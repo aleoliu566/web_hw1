@@ -1,0 +1,22 @@
+body{
+	text-align:center;
+	font-family: Arial;
+	font-weight: bold;
+}
+h1{
+	color:#009393;
+	font-size: 35px;
+	font-family: sans-serif,微軟正黑體;
+}
+div{
+	position: fixed;
+	background-color: #009393; 
+	right: 0;
+	left: 0;
+	bottom:0;
+	height:100px;
+}
+
+h3{
+	color: white;
+}

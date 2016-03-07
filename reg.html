@@ -2,15 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel=stylesheet type="text/css" href="quiz1.css"> 
 <title>Registration form</title>
+<link rel="stylesheet" type="text/css" href="reg.css">
 </head>
 
 <body>
-	<form name="myForm">
-	名字：<input type="text" maxlength="10" required="required">
 	<br>
-	學院：
+	<header>
+		<h1>請輸入資料</h1>
+	</header>
+	<form name="myForm">
+	<label>
+	名字(必填)：<input type="text" maxlength="10" required="required" placeholder="請輸入您的名字">
+	</label>
+	<br><br> 
+	學院(必填)：
 	<select required>
 		<option value="">請選擇</option>
  		<option>商學院</option>
@@ -23,14 +29,18 @@
 		<option>法學院</option>
 		<option>傳播學院</option>
 	</select>
-	<br>
-	手機：<input onkeyup="value=value.replace(/[^\d]/g,'') "maxlength="10" required="required" placeholder="請輸入手機號碼">
-	<br>
-	電子信箱：<input type="email" name="email" required="required">
-	<br>
-	生日：<input type="date" >
-	<br>
-	<input type="submit">
+	<br><br>
+	手機(必填)：<input type="phone" maxlength="10" required pattern="[0-9]{10}" placeholder="請輸入手機號碼">
+	<br><br>
+	電子信箱(必填)：<input type="email" name="email" required="required" placeholder="xxx@nccu.edu.tw">
+	<br><br>
+	生日(選填)：<input type="date" >
+	<br><br>
+	<input type="submit" value="提交">
 	</form>
+	<div>
+		<br>
+		<h3>HW1 Registration form<h3>
+	</div>
 </body>
 </html>
