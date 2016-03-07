@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel=stylesheet type="text/css" href="quiz1.css"> 
+<title>Registration form</title>
+</head>
+
+<body>
+	<form name="myForm">
+	名字：<input type="text" maxlength="10" required="required">
+	<br>
+	學院：
+	<select required>
+		<option value="">請選擇</option>
+ 		<option>商學院</option>
+		<option>理學院</option>
+		<option>外國語文學院</option>
+		<option>教育學院</option>
+		<option>國際事務學院</option>
+		<option>文學院</option>
+		<option>社會科學學院</option>
+		<option>法學院</option>
+		<option>傳播學院</option>
+	</select>
+	<br>
+	手機：<input onkeyup="value=value.replace(/[^\d]/g,'') "maxlength="10" required="required" placeholder="請輸入手機號碼">
+	<br>
+	電子信箱：<input type="email" name="email" required="required">
+	<br>
+	生日：<input type="date" >
+	<br>
+	<input type="submit">
+	</form>
+</body>
+</html>
